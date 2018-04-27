@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>雲端計算作業一</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/chart.css">
+	<script type="text/javascript" src="js/d3.v3.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/topojson.v1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/chart.js"></script>
+	<script type="text/javascript" src="js/line.js"></script>
+	<script type="text/javascript" src="js/resultChart.js"></script>
+	<script type="text/javascript" src="js/drawMap.js"></script>
+	<script type="text/javascript" src="js/modeClick.js"></script>
+	<script type="text/javascript" src="js/table.js"></script>
+	<script type="text/javascript" src="js/writemap.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				<h1 style="font-size: 48px">台灣各縣市所得及出生率</h1>
+				<div class="btn-group btn-group-lg" role="group" aria-label="Button group with nested dropdown" style="margin-top: 20px;margin-left: 40px;">
+					<button id="disMode" type="button" class="btn btn-secondary clickMode" onclick="Mode(1)">Display</button>
+
+					<div class="btn-group" role="group">
+						<button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle unClickMode" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="Test Formula" onclick="Mode(6)">Test Module</button>
+						<div class="dropdown-menu" aria-labelledby="btnGroupDrop1" style="padding: 0;">
+							<button id="testBtn4" class="dropdown-item" onclick="Mode(5)">Mann-Whitney U</button>
+							<button id="testBtn2" class="dropdown-item" onclick="Mode(3)">Hoeffdong's Year</button>
+							<button id="testBtn1" class="dropdown-item" onclick="Mode(2)">Hoeffdong's City</button>
+							<button id="testBtn3" class="dropdown-item" onclick="Mode(4)">McNemar</button>
+						</div>
+					</div>
+				</div>
+				<h2 id="con" style="margin-top: 30px;font-size: 40px;text-align: center;"></h2>
+				<div id="resultText" style="padding: 0 50px;margin-top: 10px;"></div>
+				<div id="chart" style="margin-top: -50px"></div>
+			</div>
+			<div class="col-6">
+				<br><br><br>
+				<div id="map"></div>
+				<div id="resultTable" class="notDisplay"></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

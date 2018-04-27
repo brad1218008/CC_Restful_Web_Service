@@ -1,0 +1,73 @@
+body {
+	background-color: #fff;
+}
+
+.subunit-boundary {
+	fill: none;
+	stroke: #FFD306;
+	stroke-dasharray: 5, 0;
+	stroke-linejoin: round;
+}
+
+h1 {
+	margin-top: 20px;
+}
+
+.clickMode {
+	width: 220px;
+	background-color: lightblue;
+	color: darkblue;
+	border: 2px solid;
+	font-size: 20px;
+	font: Sans-serif;
+	font-weight: bold;
+}
+
+.unClickMode {
+	width: 220px;
+	background-color: white;
+	color: darkblue;
+	border: 2px solid;
+	font-size: 20px;
+	font: Sans-serif;
+}
+
+.unClickMode:hover,.clickMode:hover,.dropdown-item:hover {
+	background-color: lightblue;
+	color: black;
+}
+
+.dropdown-item {
+	width: 220px;
+	text-align: center;
+	font-size: 18px;
+	color: darkblue;
+	padding: 10px 0;
+	border: 2px solid;
+}
+
+.show>.btn-secondary.dropdown-toggle{
+	background-color: lightblue;
+	color: darkblue;
+}
+
+.hoeChart {
+	font-size: 14px;
+}
+
+.notDisplay {
+	display: none;
+}
+
+#resultTable {
+	padding-top: 40px;
+}
+
+.table {
+	text-align: center;
+}
+
+.table td{
+	padding: 3px;
+}
+
